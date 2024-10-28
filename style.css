@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #e0e0e0;
+  --secondary-color: #a0a0a0;
+  --background-color: #1a1a1a;
+  --accent-color: #3498db;
+  --container-bg: #2a2a2a;
+  --header-bg: #1f1f1f;
+  --font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--container-bg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.header {
+  background-color: var(--header-bg);
+  color: var(--primary-color);
+  padding: 15px 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: var(--header-bg);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.firstHeader {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom-width: 1px;
+}
+
+strong {
+  color: var(--accent-color);
+}
+
+p {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5dade2;
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+  color: var(--primary-color);
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.index {
+  background-color: var(--header-bg);
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.index-link {
+  color: var(--accent-color);
+}
+
+.glossary {
+  background-color: var(--header-bg);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .header, .footer {
+    padding: 10px;
+  }
+}
+
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--header-bg);
+    padding: 8px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.language-switcher a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    color: var(--accent-color);
+}
